@@ -19,3 +19,19 @@ def bubble_sort(array)
   end
   array
 end
+
+def bubble_sort_by(array)
+  outer_loop_guard = 1
+  (array.size - 1).times do
+    inner_loop_guard = 0
+    while inner_loop_guard < array.size - outer_loop_guard
+      p "check: #{array[inner_loop_guard]} and #{array[inner_loop_guard + 1]}"
+      if yield(array[inner_loop_guard], array[inner_loop_guard + 1])
+        array[inner_loop_guard], array[inner_loop_guard + 1] = array[inner_loop_guard + 1], array[inner_loop_guard]
+      end
+      inner_loop_guard += 1
+    end
+    outer_loop_guard += 1
+  end
+  array
+end
