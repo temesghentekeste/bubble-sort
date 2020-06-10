@@ -4,7 +4,7 @@ Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorith
 
 The project is done as part of microverse main curriculum from the Ruby Section.
 
-![screenshot](./bubble-sort.gif)
+![screenshot](./bubble_sort_ani.gif)
 
 ## Built With
 
